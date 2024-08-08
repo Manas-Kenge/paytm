@@ -1,5 +1,16 @@
 import { Card } from "@repo/ui/card"
 
+export enum TransactionStatus {
+    Success = "Success",
+    Failure = "Failure",
+    Processing = "Processing",
+  }
+  
+  export enum Case {
+    Debit = "Debit",
+    Credit = "Credit",
+  }
+
 export const OnRampTransactions = ({
     transactions
 }: {
